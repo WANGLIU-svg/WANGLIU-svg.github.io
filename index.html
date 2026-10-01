@@ -1,181 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Picturesque Scenery — Professor, sports educator, amateur photographer and advanced open water diver.">
-  <meta name="theme-color" content="#0b0f14">
-  <title>Picturesque Scenery — Professor · Photographer · Diver</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Picturesque Scenery — professor, sports educator, diver, and amateur photographer.">
+  <meta name="theme-color" content="#071116">
+  <title>Picturesque Scenery — Professor &amp; Photographer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071116'/%3E%3Cpath d='M9 45 24 24l9 12 7-9 15 18H9Z' fill='%23d6a86b'/%3E%3Ccircle cx='45' cy='18' r='6' fill='%23f3eadb'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="header">
-      <a class="brand" href="#home" aria-label="Picturesque Scenery home">
-        <span class="brand-mark">PS</span>
-        <span>Picturesque Scenery</span>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="nav-link active" href="#home">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#skills">Expertise</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </nav>
-    </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Picturesque Scenery home">
+      <span class="brand-mark" aria-hidden="true">PS</span>
+      <span>Picturesque Scenery</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#project">Photography</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-      <section class="hero section" id="home">
-        <div class="hero-content">
-          <p class="eyebrow">PROFESSOR · EDUCATOR · PHOTOGRAPHER</p>
-          <h1>Picturesque<br><em>Scenery</em></h1>
-          <p class="hero-copy">
-            An educator with a lifelong passion for sports, photography and exploration —
-            bringing movement, discipline and visual storytelling together.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore Projects <span>↗</span></a>
-            <a class="button button-ghost" href="#contact">Get in Touch</a>
-          </div>
-          <div class="credential-row">
-            <div><strong>20+</strong><span>Years in Sports Education</span></div>
-            <div><strong>01</strong><span>National Level 1 Instructor</span></div>
-            <div><strong>AWD</strong><span>Advanced Open Water Diver</span></div>
-          </div>
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="./assets/hero-landscape.png" alt="Mountain peaks glowing above a misty alpine lake at sunrise">
+      <div class="hero-overlay"></div>
+      <div class="hero-content shell reveal visible">
+        <p class="eyebrow">Professor · Photographer · Diver</p>
+        <h1 id="hero-title">Picturesque<br><em>Scenery</em></h1>
+        <p class="hero-copy">An amateur photographer and lifelong educator, finding discipline in sport, perspective beneath the surface, and stories in the natural world.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#project">Explore photography</a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
         </div>
-        <div class="hero-visual" aria-label="Photography inspired visual">
-          <div class="sun"></div>
-          <div class="mountain mountain-back"></div>
-          <div class="mountain mountain-front"></div>
-          <div class="water"></div>
-          <div class="visual-label">
-            <span>01</span>
-            <span>SEE · MOVE · EXPLORE</span>
-          </div>
-        </div>
-      </section>
+      </div>
+      <div class="hero-credentials" aria-label="Credentials">
+        <div><strong>20+</strong><span>Years in sports education</span></div>
+        <div><strong>Level 1</strong><span>National Social Sports Instructor</span></div>
+        <div><strong>AOW</strong><span>Advanced Open Water Diver</span></div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span>Discover</a>
+    </section>
 
-      <section class="about section" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2>Where education<br><em>meets exploration.</em></h2>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="shell split-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · About me</p>
+          <h2 id="about-title">Education in motion.<br>Life in focus.</h2>
         </div>
-        <div class="about-grid">
-          <div class="about-lead">
-            <p>An educator with a passion for sports and photography.</p>
-          </div>
-          <div class="about-text">
-            <p>
-              My work sits at the intersection of education, movement and visual storytelling.
-              With more than two decades in sports education, I believe that curiosity,
-              discipline and the willingness to explore are essential parts of a meaningful life.
-            </p>
-            <p>
-              Away from teaching, I capture moments through photography and explore the
-              underwater world as an Advanced Open Water Diver. These experiences continually
-              shape how I observe people, places and the world around me.
-            </p>
+        <div class="about-copy reveal">
+          <p class="lead">An educator with a passion for sports and photography.</p>
+          <p>For more than two decades, I have worked in sports education—helping people develop skill, confidence, and an enduring respect for movement. Away from the classroom, photography and diving offer a different rhythm: patience, observation, and the search for a singular moment.</p>
+          <div class="credentials-list">
+            <div><span>01</span><p>National Level 1 Social Sports Instructor</p></div>
+            <div><span>02</span><p>Teacher Qualification Certificate (Higher Education)</p></div>
+            <div><span>03</span><p>Advanced Open Water Diver</p></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="skills section" id="skills">
-        <div class="section-heading split">
+    <section class="section expertise" id="expertise" aria-labelledby="expertise-title">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
           <div>
-            <p class="eyebrow">SKILLS & EXPERTISE</p>
-            <h2>Built through<br><em>movement.</em></h2>
+            <p class="eyebrow">02 · Skills &amp; expertise</p>
+            <h2 id="expertise-title">Built through practice.</h2>
           </div>
-          <p class="section-note">Sports education · Performance · Outdoor exploration</p>
+          <p>Teaching, coaching, and exploring across court, track, and open water.</p>
         </div>
         <div class="skill-grid">
-          <article class="skill-card"><span>01</span><h3>Basketball</h3><p>Teamwork · Strategy · Athletic development</p></article>
-          <article class="skill-card"><span>02</span><h3>Volleyball</h3><p>Coordination · Communication · Performance</p></article>
-          <article class="skill-card"><span>03</span><h3>Badminton</h3><p>Agility · Precision · Reaction</p></article>
-          <article class="skill-card"><span>04</span><h3>Track & Field</h3><p>Conditioning · Technique · Endurance</p></article>
-          <article class="skill-card skill-card-wide"><span>05</span><h3>Scuba Diving</h3><p>Advanced Open Water Diver · Deep Diving · Wreck Diving · Enriched Air Nitrox · Night Diving</p></article>
+          <article class="skill-card reveal"><span>01</span><h3>Basketball</h3><p>Strategy, teamwork, and control in motion.</p></article>
+          <article class="skill-card reveal"><span>02</span><h3>Volleyball</h3><p>Timing, trust, and collective precision.</p></article>
+          <article class="skill-card reveal"><span>03</span><h3>Badminton</h3><p>Fast decisions, balance, and technique.</p></article>
+          <article class="skill-card reveal"><span>04</span><h3>Track &amp; Field</h3><p>Performance built one repeat at a time.</p></article>
+          <article class="skill-card feature reveal"><span>05</span><h3>Scuba Diving</h3><p>Deep Diving · Wreck Diving · Enriched Air Nitrox · Night Diving</p></article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="experience section">
-        <div class="experience-panel">
-          <div class="experience-number">20<span>+</span></div>
-          <div>
-            <p class="eyebrow">EXPERIENCE</p>
-            <h2>Years of sports education.</h2>
-            <p>
-              More than 20 years dedicated to sports education, helping people discover
-              confidence, discipline and enjoyment through movement.
-            </p>
-          </div>
+    <section class="section experience" aria-labelledby="experience-title">
+      <div class="shell experience-panel reveal">
+        <p class="eyebrow">03 · Experience</p>
+        <div class="experience-number">20<span>+</span></div>
+        <div>
+          <h2 id="experience-title">Years in sports education</h2>
+          <p>A career shaped by teaching, mentorship, and a belief that sustained practice transforms both performance and character.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="projects section" id="projects">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">SELECTED PROJECT</p>
-            <h2>Photography<br><em>Community.</em></h2>
-          </div>
-          <div class="project-tag">Photography</div>
+    <section class="section project" id="project" aria-labelledby="project-title">
+      <div class="shell">
+        <div class="project-intro reveal">
+          <p class="eyebrow">04 · Featured project</p>
+          <h2 id="project-title">Photography</h2>
+          <p class="lead">A friendly community for photography enthusiasts.</p>
         </div>
+        <div class="project-visual reveal">
+          <img src="./assets/hero-landscape.png" alt="Panoramic alpine landscape reflected in still water" loading="lazy">
+          <div class="project-caption"><span>Photography Community</span><strong>Light · Place · Perspective</strong></div>
+        </div>
+        <div class="category-grid">
+          <article class="category reveal"><span>01</span><h3>Portfolio</h3><p>A considered collection of landscapes, journeys, and quiet observations.</p></article>
+          <article class="category reveal"><span>02</span><h3>Snapshots</h3><p>Unscripted frames—the small scenes that give everyday life its texture.</p></article>
+          <article class="category reveal"><span>03</span><h3>Community</h3><p>A welcoming place to share work, exchange ideas, and grow together.</p></article>
+        </div>
+      </div>
+    </section>
 
-        <article class="project-card">
-          <div class="project-art">
-            <div class="project-art-inner">
-              <span class="project-art-top">PHOTOGRAPHY</span>
-              <span class="project-art-title">See the<br>world<br>differently.</span>
-              <span class="project-art-bottom">A FRIENDLY COMMUNITY FOR PHOTOGRAPHY ENTHUSIASTS</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <p class="eyebrow">PROJECT OVERVIEW</p>
-            <h3>A Friendly Community for Photography Enthusiasts</h3>
-            <p>
-              A welcoming photography community created for people who enjoy seeing,
-              making and sharing images. From considered portfolios to spontaneous
-              snapshots, the project celebrates photography as a way to connect.
-            </p>
-            <div class="category-list">
-              <span>Portfolio</span>
-              <span>Snapshots</span>
-              <span>Community</span>
-            </div>
-            <div class="project-details">
-              <div><small>01</small><strong>Overview</strong><p>Share visual stories, discover new perspectives and connect with fellow photography enthusiasts.</p></div>
-              <div><small>02</small><strong>Purpose</strong><p>Make photography feel accessible, social and inspiring for everyone.</p></div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="contact section" id="contact">
-        <div class="contact-inner">
-          <p class="eyebrow">CONTACT</p>
-          <h2>Let's connect<br><em>and explore.</em></h2>
-          <p class="contact-copy">For collaboration, photography communities, education or simply a conversation.</p>
-          <a class="email-link" href="mailto:picturesque-scenery@kangziliu.com">picturesque-scenery@kangziliu.com <span>↗</span></a>
-          <div class="socials">
-            <a href="#" aria-label="TikTok">TikTok <span>S666666S</span></a>
-            <a href="#" aria-label="Xiaohongshu">Xiaohongshu <span>L19743275796</span></a>
-            <a href="#" aria-label="Weibo">Weibo <span>6愿时光待我如初6</span></a>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">05 · Contact</p>
+          <h2 id="contact-title">Let’s share a<br><em>perspective.</em></h2>
+        </div>
+        <div class="contact-details reveal">
+          <p>For conversations about education, sport, diving, or photography, reach out by email or find me on social media.</p>
+          <a class="email-link" href="mailto:picturesque-scenery@kangziliu.com">picturesque-scenery@kangziliu.com</a>
+          <div class="social-list">
+            <div><span>TikTok</span><strong>S666666S</strong></div>
+            <div><span>Xiaohongshu</span><strong>L19743275796</strong></div>
+            <div><span>Weibo</span><strong>6愿时光待我如初6</strong></div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <span>© <span id="year"></span> Picturesque Scenery</span>
-      <span>Professor · Photographer · Diver</span>
-      <a href="#home">Back to top ↑</a>
-    </footer>
-  </div>
-
-  <script src="js/main.js"></script>
+  <footer class="site-footer">
+    <div class="shell"><p>© <span data-year></span> Picturesque Scenery</p><a href="#home">Back to top</a></div>
+  </footer>
 </body>
 </html>
